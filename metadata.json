@@ -1,0 +1,6 @@
+{
+  "name": "منظم الحياة الرقمية",
+  "description": "منظم ذكي يقوم بتصنيف الصور تلقائياً، واستخراج نصوص لقطات الشاشة مع ميزة حارس المساحة والبحث الفائق.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
