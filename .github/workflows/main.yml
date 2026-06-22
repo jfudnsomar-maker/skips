@@ -24,6 +24,10 @@ jobs:
       run: |
         echo "GEMINI_API_KEY=AIzaSyFakeKeyForBuilding" > .env
 
+    - name: Fix signingConfig issue (Remove debug config)
+      run: |
+        sed -i '/signingConfig = signingConfigs.getByName("debugConfig")/d' app/build.gradle.kts
+
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
       continue-on-error: true
